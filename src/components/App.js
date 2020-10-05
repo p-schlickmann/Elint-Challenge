@@ -5,6 +5,7 @@ import "./App.css";
 import Home from "./Home";
 import Header from "./Header";
 import FileUploader from "./FileUploader";
+import Results from "./Results";
 
 export default () => {
   return (
@@ -16,6 +17,9 @@ export default () => {
         </Route>
         <Route exact path="/upload">
           <FileUploader />
+        </Route>
+        <Route exact path="/upload/results">
+          <Results />
         </Route>
       </BrowserRouter>
     </div>

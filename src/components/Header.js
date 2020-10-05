@@ -19,7 +19,7 @@ const Header = () => {
         <Link
           to="/"
           style={{
-            fontSize: "30px",
+            fontSize: "28px",
             color: "var(--color-primary-dark)",
             marginLeft: "30px",
           }}
@@ -31,7 +31,7 @@ const Header = () => {
         <Link
           to="/upload"
           style={{
-            fontSize: "30px",
+            fontSize: "28px",
             color: "var(--color-primary-dark)",
             marginLeft: "30px",
           }}
@@ -43,7 +43,7 @@ const Header = () => {
         <Link
           to="/how"
           style={{
-            fontSize: "30px",
+            fontSize: "28px",
             color: "var(--color-primary-dark)",
             marginLeft: "30px",
           }}
