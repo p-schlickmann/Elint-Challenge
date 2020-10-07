@@ -24,7 +24,7 @@ const Header = () => {
             marginLeft: "30px",
           }}
         >
-          <i class="fa fa-home" style={{ marginRight: "10px" }}></i>
+          <i className="fa fa-home" style={{ marginRight: "10px" }}></i>
           Home
         </Link>
 
@@ -36,7 +36,7 @@ const Header = () => {
             marginLeft: "30px",
           }}
         >
-          <i class="fa fa-upload" style={{ marginRight: "10px" }}></i>
+          <i className="fa fa-upload" style={{ marginRight: "10px" }}></i>
           Try it out
         </Link>
 
@@ -48,7 +48,7 @@ const Header = () => {
             marginLeft: "30px",
           }}
         >
-          <i class="fa fa-cogs" style={{ marginRight: "10px" }}></i>
+          <i className="fa fa-cogs" style={{ marginRight: "10px" }}></i>
           How it works
         </Link>
       </div>

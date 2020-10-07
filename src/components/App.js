@@ -4,7 +4,7 @@ import { Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Home from "./Home";
 import Header from "./Header";
-import FileUploader from "./FileUploader";
+import Upload from "./Upload";
 import Results from "./Results";
 
 export default () => {
@@ -16,7 +16,7 @@ export default () => {
           <Home />
         </Route>
         <Route exact path="/upload">
-          <FileUploader />
+          <Upload />
         </Route>
         <Route exact path="/upload/results">
           <Results />

@@ -1,0 +1,44 @@
+.buttons-container {
+  display: flex;
+  justify-content: flex-start;
+  margin: 4rem 0;
+}
+
+.buttons-container .how:hover {
+  background-color: #d8d9db;
+}
+.buttons-container .try:hover {
+  background-color: #1e8b9c;
+}
+.buttons-container i {
+  width: 4rem;
+  margin-right: 2.4rem;
+}
+.buttons-container .how {
+  background-color: #f8f9fa;
+  margin-right: 1.6rem;
+  width: 17rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+  color: var(--color-secondary-dark);
+  font: 700 1.5rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.buttons-container .try {
+  background-color: #17a2b8;
+  margin-right: 0;
+  width: 17rem;
+  height: 5rem;
+  border-radius: 0.8rem;
+  color: #fff;
+  font: 700 1.5rem Archivo;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+}
