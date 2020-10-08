@@ -30,9 +30,9 @@ const Results = ({ location, history }) => {
             "http://18.219.108.220:5000/transcribe",
             formData,
             {
-              timeout: 1800000,
+              timeout: 600000,
             }
-          ); //  minutes
+          ); // 10 minutes
           console.log(response);
           if (response.status === 200 && response.data.success) {
             console.log(results);

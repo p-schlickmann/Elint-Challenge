@@ -6,6 +6,7 @@ import Home from "./Home";
 import Header from "./Header";
 import Upload from "./Upload";
 import Results from "./Results";
+import How from "./How";
 
 export default () => {
   return (
@@ -20,6 +21,9 @@ export default () => {
         </Route>
         <Route exact path="/upload/results">
           <Results />
+        </Route>
+        <Route to="/how">
+          <How />
         </Route>
       </BrowserRouter>
     </div>
