@@ -39,18 +39,6 @@ const Header = () => {
           <i className="fa fa-upload" style={{ marginRight: "10px" }}></i>
           Try it out
         </Link>
-
-        <Link
-          to="/how"
-          style={{
-            fontSize: "28px",
-            color: "var(--color-primary-dark)",
-            marginLeft: "30px",
-          }}
-        >
-          <i className="fa fa-cogs" style={{ marginRight: "10px" }}></i>
-          How it works
-        </Link>
       </div>
     </nav>
   );

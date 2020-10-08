@@ -15,15 +15,13 @@ export default () => {
         <Header />
         <Route exact path="/">
           <Home />
+          <How />
         </Route>
         <Route exact path="/upload">
           <Upload />
         </Route>
         <Route exact path="/upload/results">
           <Results />
-        </Route>
-        <Route to="/how">
-          <How />
         </Route>
       </BrowserRouter>
     </div>
