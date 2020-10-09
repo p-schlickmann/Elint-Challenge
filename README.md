@@ -1,68 +1,58 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# drw-front
 
-## Available Scripts
+Repo for Elint Tech's frontend challenge
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+- Clone this repository;
+- Create a branch and name it with your first name in lower case;
+- Code and open a pull request when everything is done.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Make sure to let all clear to us. The documentation will have a huge impact in your perfomance.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Resources
 
-### `npm test`
+- [Download challenge description](https://s3.us-east-2.amazonaws.com/nn.weights/Challenge.pdf)
+- [Elint's discord](https://discord.gg/xydMVT)
+- [Elint's colour scheme](https://coolors.co/1a1c38-464866-dee0f2-2e9cca-29648a)
+- [Elint's assets](https://wetransfer.com/downloads/411d57f8616ccec8deb4fffe4e78988020201002194635/28d0ac)
+- [Frontend templates examples](https://themehunt.com/items/html/landing-pages/latest) (a lot more on the web)
+- [Heroku](https://www.heroku.com/free)
+- [AWS Free Tier](https://aws.amazon.com/pt/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)
+- [GCP Free Tier](https://cloud.google.com/free)
+- [GitHub student backpack](https://education.github.com/pack)
+- [Awesome Django](https://github.com/wsvincent/awesome-django)
+- [Awesome Flask](https://github.com/humiaozuzu/awesome-flask)
+- [Awesome React](https://github.com/enaqx/awesome-react)
+- [_.mp3_ sample 1](https://s3.us-east-2.amazonaws.com/nn.weights/frank.mp3)
+- [_.mp3_ sample 2](https://s3.us-east-2.amazonaws.com/nn.weights/interview.mp3)
+- [JSON example reponse from transcriber server](https://s3.us-east-2.amazonaws.com/transcripted.files/3xeaznnz.json)
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Challenge
 
-### `npm run build`
+You can access the challenge page at http://elint-challenge.s3-website-sa-east-1.amazonaws.com/
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Video Link: https://youtu.be/Ba79hoAA1G4
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+### Technologies used
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Javascript
+2. React
+3. React Router
+4. Axios
+5. Bootstrap
+6. Semantic UI
+7. Font Awesome
+8. AWS s3
 
-### `npm run eject`
+### How to run locally
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+1. Install Node.js
+2. Clone this repository
+3. Open _cmd_(Windows) or _Terminal_(MacOS/Linux), go to project root directory
+4. Install the required libraries with: `npm install --save axios react-router-dom`
+5. Run the project with `npm start`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Deploying
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+You can always use Vercel or Netfly services. That are way more easy and have built-in HTTPS. But I needed an HTTP hosting because the API is also in HTTP. So I used AWS s3 static hosting. I used [this article](https://medium.com/serverlessguru/deploy-reactjs-app-with-s3-static-hosting-f640cb49d7e6) as a reference.
