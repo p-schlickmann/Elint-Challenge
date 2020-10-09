@@ -18,18 +18,20 @@ const Upload = () => {
       const filesArray = [...e.target.files];
       console.log(filesArray);
       filesArray.forEach((item, i) => {
-        // create id for each file and check if all of them are mp3
-
+        // create id for each file
         item.id = i;
-        if (!item.name.endsWith(".mp3")) {
-          setError("All files must be mp3");
-          document.getElementById("multifile").value = "";
-          return;
-        } else {
-          setError("");
-        }
       });
-      setFiles([...e.target.files]);
+      const notValid = filesArray.filter((file) => {
+        // check if they are all mp3
+        return !file.name.endsWith(".mp3");
+      });
+      if (notValid[0]) {
+        document.getElementById("multifile").value = "";
+        setError("All files must be mp3");
+      } else {
+        setError("");
+        setFiles([...e.target.files]);
+      }
     }
   };
 

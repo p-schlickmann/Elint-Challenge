@@ -8,13 +8,15 @@ import Modal from "./Modal";
 const Results = ({ location, history }) => {
   const [files] = useState(location.state.files); // props passed through Link component in Upload.js
   const [results, setResults] = useState([]);
-  const [response, setResponse] = useState({}); // why use this state? contact me
+  const [response, setResponse] = useState({}); // why use this state? to fix some async issues
   const [displayModal, setDisplayStatus] = useState(false);
   console.log(files, results);
 
   useEffect(() => getResponse(), []);
 
-  useEffect(() => setResults([...results, response]), [response]); // why do that? contact me
+  useEffect(() => setResults([...results, response]), [response]);
+  // it's like a bridge between the response and the results array
+  // I did it to fix some crazy async bugs
 
   const getResponse = () => {
     if (!files) {
@@ -23,7 +25,7 @@ const Results = ({ location, history }) => {
     } else {
       Promise.all(
         files.map(async (file, i) => {
-          file.id = i;
+          file.id = i; // set id
           const formData = new FormData();
           formData.append("audio", file);
           const response = await axios.post(
@@ -32,7 +34,7 @@ const Results = ({ location, history }) => {
             {
               timeout: 600000,
             }
-          ); // 10 minutes
+          ); // 10 minutes timeout
           console.log(response);
           if (response.status === 200 && response.data.success) {
             console.log(results);
@@ -88,7 +90,6 @@ const Results = ({ location, history }) => {
     return files.map((file) => {
       const found = results.filter((result) => {
         // const found determines if the file has been uploaded successfully
-
         return result.id === file.id;
       });
       return (
